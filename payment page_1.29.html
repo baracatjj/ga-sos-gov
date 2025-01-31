@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment page</title>
+    <link rel="stylesheet" href="https://commercehub-cdn.fiservapps.com/hco/assets/css/styles.css"/>
+    <link rel="stylesheet" href="https://commercehub-cdn.fiservapps.com/hco/assets/css/google-family-icons.css"/>
+    <link rel="stylesheet" href="https://commercehub-cdn.fiservapps.com/hco/assets/css/custom.css"/>
+    <link rel="stylesheet" href="https://commercehub-cdn.fiservapps.com/hco/assets/css/payment.css"/>
+    <link rel="stylesheet" href=""/>
+    <script src="https://commercehub-cdn.fiservapps.com/hco/assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script rel="script" src="https://commercehub-cdn.fiservapps.com/hco/assets/js/payment.min.js?f22f87db-ff91-4b9e-9caf-5671f6270fdf" type="text/javascript"></script>
+</head>
+
+<body id="paymentBody">
+<div id="document">
+    <input id="hidden-languageCode" value="" type="hidden"/>
+    <input id="hidden-xlogin" value="WSP-GEORG-lcHBaQCy&amp;w" type="hidden"/>
+    <input id="hidden-amount" value="55.00" type="hidden"/>
+    <input id="hidden-limitedGet" value="false" type="hidden"/>
+    <input id="hidden-transactionType" value="" type="hidden"/>
+    <input id="hidden-receiptText" value="" type="hidden"/>
+    <input id="hidden-hashKey" value="8ab234b8a5ed3afac29e7f565c671e9f6eb9a3b3" type="hidden"/>
+    <input id="hidden-enableCaptcha" value="true" type="hidden"/>
+    <input id="hidden-cardinalCruiseDDCUrl" value="https://centinelapi.cardinalcommerce.com/V2/Cruise/Collect" type="hidden"/>
+    <input id="hidden-cardinalCruiseStepUpUrl" value="https://centinelapi.cardinalcommerce.com/V2/Cruise/StepUp" type="hidden"/>
+    <input id="hidden-splitTenderId" value="" type="hidden"/>
+    <input id="hidden-splitPaymentsAmounts" value="" type="hidden"/>
+    <input id="hidden-payableAmount" value="55.00" type="hidden"/>
+    <input id="hidden-lineItem" value="[]" type="hidden"/>
+    <input id="hidden-tax" value="" type="hidden"/>
+    <input id="hidden-freight" value="" type="hidden"/>
+    <input id="hidden-gatewayId" value="" type="hidden"/>
+    <input id="hidden-paymentPageLogo" value="1540500021_1434996608_sos-logo.PNG" type="hidden"/>
+    <input id="hidden-paymentpageMobileLogo" value="" type="hidden"/>
+    <input id="hidden-logoURL" value="" type="hidden"/>
+    <input id="hidden-creditCardText" value="Pay With Your Credit Card"
+           type="hidden"/>
+    <input id="hidden-creditCardSubText" value="Please verify the card information matches your billing information."
+           type="hidden"/>
+    <input id="hidden-teleCheckText" value="PayWithCheck"
+           type="hidden"/>
+    <input id="hidden-giftCardText" value="Pay With Your Gift Card"
+           type="hidden"/>
+   <input id="hidden-addressSubText" value="Enter the credit card billing address below."
+           type="hidden"/>
+    <input id="hidden-emailSubText" value="A confirmation email will be sent to this address."
+           type="hidden"/>
+    <input id="hidden-customerFirstName" value="" type="hidden"/>
+    <input id="hidden-customerLastName" value="" type="hidden"/>
+    <input id="hidden-customerEmail" value="" type="hidden"/>
+    <input id="hidden-returnUrl" value="https://ecorp.sos.ga.gov/PaymentResponse/ReturnToPayment" type="hidden"/>
+    <input id="hidden-receiptLinkMethod" value="AUTO-POST" type="hidden"/>
+    <input id="hidden-receiptLinkAvailable" value="true" type="hidden"/>
+    <input id="hidden-receiptLinkURL" value="https://ecorp.sos.ga.gov/PaymentResponse/PaymentConfirmation" type="hidden"/>
+    <input id="hidden-allowHttpRediect" value="false" type="hidden"/>
+    <input id="hidden-enableThreeDSecure" value="false" type="hidden"/>
+    <input id="hidden-threeDSecureEnrollment" value="false" type="hidden"/>
+    <input id="hidden-customButtonTitle" value="" type="hidden"/>
+    <input id="hidden-customHeadingTitle" value="" type="hidden"/>
+    <input id="hidden-merchantEmail" value="aditya.vasireddy@pcctg.com" type="hidden"/>
+    <input id="hidden-currencyCode" value="USD" type="hidden"/>
+    <input id="hidden-fee" value="" type="hidden"/>
+    <input id="hidden-applePayMerchantSessionUrl" value="" type="hidden"/>
+    <input id="hidden-logoBucketUrl" value="https://commercehub-cdn.fiservapps.com/hco/" type="hidden"/>
+    <input id="hidden-hCaptchaVerifyUrl" value="https://hcaptcha.com/1/api.js" type="hidden"/>
+    <input id="hidden-dashboardMobilePreview" value="false" type="hidden"/>
+    <input id="hidden-enableDashboardPreview" value="false" type="hidden"/>
+    <input id="hidden-enableCvv" value="true" type="hidden"/>
+    <input id="hidden-merchantDefinedFields" value="e30=" type="hidden"/>
+    <input id="hidden-isPayNowDonateNow" value="false" type="hidden"/>
+    <input id="hidden-collectPayment" value="false" type="hidden"/>
+    <input id="hidden-avsFilter" value="true" type="hidden"/>
+    <input id="hidden-city" value="" type="hidden"/>
+    <input id="hidden-state" value="" type="hidden"/>
+    <input id="hidden-zip" value="" type="hidden"/>
+    <input id="hidden-country" value="" type="hidden"/>
+    <input id="hidden-address" value="" type="hidden"/>
+    <input id="hidden-sessionId" value="" type="hidden"/>
+    <input id="hidden-user1" value="" type="hidden"/>
+    <input id="hidden-user2" value="" type="hidden"/>
+    <input id="hidden-user3" value="" type="hidden"/>
+    <input id="hidden-giftCardType" value="E" type="hidden"/>
+    <input id="hidden-xMethod" value="" type="hidden"/>
+    <input id="hidden-enableTelecheckSettings" value="false" type="hidden"/>
+    <input id="hidden-enableGiftCardSettings" value="false" type="hidden"/>
+    <input id="hidden-enableCreditCardSettings" value="true" type="hidden"/>
+    <input id="hidden-xreference3" value="" type="hidden"/>
+    <input id="hidden-publicKey" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxU0Lvv1kDJsu3zH8hHe2bB14r3pDzeLR5/WUG54Ftpp9PHDwIjrjWRMSYYO0KhJP6R8/0dq5KGI7W01+Fk9O3omk8TI4hIZOlNZVXFVE9yfjB/hwp3pehWOGM7YJwMes1FCA/N23lV77l9zlJNYxAUdtY73KsBJhB6rBDDVTAIF7ko3xlbBKeZEqQH6NktS3k7YOYQ68mgvYuBts3GxpcBFRjelCzodK1turp/K9aK6NZCsMsq0tt4YcYiEpCVCzzYMhZ7R62/e8WBVT825QmxZq6TIjbuD/mSgBH/zePMgfIbnW8HuZVZu8WbZTOFowj2JBv9LjHnvR2O9nzcOS0QIDAQAB" type="hidden"/>
+    <input id="hidden-keyId" value="013859ad-8c27-40fc-bfd0-1655799d8cd3" type="hidden"/>
+    <input id="hidden-hCaptchaKey" value="7b3fa1a1-94c3-49e5-8f50-e252fe0b6bae" type="hidden"/>
+
+    <div id=pay-now-donate-now>
+        <div id="header-pay-now-donate-now">
+            <h1 id="review-order-pay-now-donate-now">
+                <span class="pageTitle">Georgia Express Corporations (eCorp) Credit Card Payment</span>
+            </h1>
+            <br>
+        </div>
+        <div id="content-pay-now">
+            <p>Please enter the amount you wish to pay:</p>
+
+            <span class="pay_now_donate_now_option">
+                <input type="text" name="pay-now-donate-now-input" id="paynowDonatenow-amount" size="20" autocomplete="off"/>
+                <p>USD</p>
+            </span>
+
+            <button class="submit-payment" id="collect-payment-button" type="button">Submit</button>
+            <div id="secure-pay-now">
+                <p>Your private information is secured using SSL (Secure Sockets Layer), the leading security protocol on the Internet. Information is encrypted and exchanged with an http server.</p>
+                <p>We respect your privacy. We will pass your name, address or e-mail address on only to the merchant.</p>
+            </div>
+            <div id="footer-pay-now">
+            </div>
+        </div>
+    </div>
+
+    <div id="payment-page">
+        <div id="header">
+            <h1 id="review-order">
+                <span class="pageTitle">Georgia Express Corporations (eCorp) Credit Card Payment</span>
+                <img id="logoDiv"/>
+            </h1>
+            <br>
+        </div>
+        <div id="content">
+            <div id="order">
+                <h1 id="reviewOrderTitle">Review Your Order</h1>
+                
+                
+                <div id="preview-table-div">
+                    <table cellpadding="0" cellspacing="0" class="detailedsummary" id="preview-table"
+                           summary="Order Summary">
+                        <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th class="item">Item</th>
+                            <th class="unit">Unit</th>
+                            <th class="amount" colspan="2">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tableBodyItems"></tbody>
+                    </table>
+                </div>
+                <p class="total_row">
+                    <span class="total_label">Total Amount:</span>
+                    <span class="total_currency">USD</span>
+                    <span class="total_value"></span>
+                </p>
+            </div>
+            <div id="return-head">
+                <a id="returnHeadUrl"></a>
+            </div>
+
+            <div id="choose_payment_option">
+                <h1 id="payment_options_header">Choose Payment Option</h1>
+                <span class="payment_option" id="credit-card-option">
+                    <input checked="checked" class="payment-option" id="pay_creditCard" name="paymentOption"
+                           type="radio" value="cc"/>
+                </span>
+                
+                
+            </div>
+            <div class="payment-form" id="teleCheck-div">
+                <div class="pay-option telecheck-disclosure-state-class-0 " id="check-wrapper">
+                    <div id="telecheck">
+                        <h1>Pay With Your Check</h1>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-customerName">Customer Name is not valid.</div>
+                            <label for="exact_cardholder_name">Customer Name</label>
+                            <input autocomplete="off" class="form-control exact_cardholder_name" id="exact_cardholder_name" name="exact_cardholder_name" size="20" type="text" 
+                             value="" />
+
+                            <input autocomplete="off" id="cc_request_id" name="servdt5" type="hidden" value="5"/>
+                            <input autocomplete="off" id="x_method" name="x_method" type="hidden" value="ECHECK"/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-aba">Routing Number is not valid.</div>
+                            <label>ABA/Bank Routing No.</label>
+                            <input autocomplete="off" class="form-control x_bank_aba_code" id="x_bank_aba_code"
+                                   maxlength="10"
+                                   name="x_bank_aba_code" size="10"
+                                   type="text"/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <label>Bank Account Type</label>
+                            <select id="x_bank_acct_type" name="x_bank_acct_type">
+                                <option value="CHECKING">Personal</option>
+                                <option value="BUSINESSCHECKING">Company</option>
+                            </select>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-accountNumber">Account Number is not
+                                valid.
+                            </div>
+                            <label>Account Number</label>
+                            <input autocomplete="off" class="form-control x_bank_acct_num" id="x_bank_acct_num"
+                                   maxlength="16"
+                                   name="x_bank_acct_num" size="16"
+                                   type="text"/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <label>Check Number</label>
+                            <input autocomplete="off" class="form-control x_bank_check_number" id="x_bank_check_number"
+                                   maxlength="11" name="x_bank_check_number" size="11"
+                                   type="text"/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-address">Address is not valid.</div>
+                            <label>Address</label>
+                            <p id="addressSubText">Enter the credit card billing address below.</p>
+                            <input autocomplete="off" class="form-control x_address" id="x_address" maxlength="100"
+                                   name="x_address"
+                                   size="20"
+                                   type="text" value=""/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-city">City is not valid.</div>
+                            <label>City</label>
+                            <input autocomplete="off" class="form-control x_city" id="x_city" maxlength="20"
+                                   name="x_city"
+                                   size="20"
+                                   type="text" value=""/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <label>State/Province</label>
+                            <select class="x_state" id="x_state" name="x_state">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-zip">zip is not valid.</div>
+                            <label>ZIP/Postal Code</label>
+                            <input autocomplete="off" class="form-control x_zip" id="x_zip" maxlength="9" name="x_zip"
+                                   size="9"
+                                   type="text" value=""/>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <label>Country</label>
+                            <select class="country-select x_country" id="x_country" name="x_country">
+                            </select>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-phone">phone is not valid.</div>
+                            <label>Phone</label>
+                            <div class="phoneInput" id="phoneInput">
+                                <select class="x_phone_type" id="x_phone_type" name="x_phone_type" title="Phone Type">
+                                    <option value="H">Home</option>
+                                    <option value="W">Work</option>
+                                    <option value="D">Day</option>
+                                    <option value="N">Night</option>
+                                </select>
+                                <input autocomplete="off" class="form-control x_phone" id="x_phone" maxlength="14"
+                                       name="x_phone"
+                                       size="14"
+                                       type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <label>Email</label>
+                            <div class="fieldErrorMessage-receiptEmailPayment" >Invalid email format. Must be<br>username@domain</div>
+                            <input autocomplete="off" class="form-control cc_email" id="cc_email" maxlength="70"
+                                   name="x_email"
+                                   size="20"
+                                   type="text" value=""/>
+                            <p id="emailSubText">A confirmation email will be sent to this address.</p>       
+                        </div>
+                        <div class="form-group telecheck-form-group">
+                            <div class="fieldErrorMessage-customerId">ID is not valid.</div>
+                            <label>ID Details</label>
+                            <div class="customerId" id="customerId">
+                                <select class="customer_id_type" id="customer_id_type" name="customer_id_type">
+                                    <option value="0">Driver's License</option>
+                                    <option value="1">SSN</option>
+                                    <option value="2">Tax ID/TIN</option>
+                                </select>
+                                <input autocomplete="off" class="form-control customer_id_number"
+                                       id="customer_id_number"
+                                       name="customer_id_number" type="text"/>
+                            </div>
+                            <div class="input_tip">If using a driver's license as ID, please also include the state,
+                                e.g:
+                                TX123456789
+                            </div>
+                            <div class="input_tip">If using a Tax ID/Tin, please omit any dashes or spaces, e.g:
+                                789654121
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-description" id="check-description">
+                        <h1>Check Description</h1>
+                        <p>
+                            <img alt="Check Description" class="check-description-img"
+                                 src="https://commercehub-cdn.fiservapps.com/hco/assets/images/check_numbers.png">
+                        </p>
+                        <ul>
+                            <li>ABA/Bank Routing No.</li>
+                            <li>Account Number</li>
+                            <li>Check Number - (Optional)</li>
+                        </ul>
+                        <div class="teleCheck-consent-message">
+                            Upon completion of the Payment Information page, the Consent page will be displayed; you
+                            will be asked to
+                            consent to the electronic funds transfer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="telecheck-disclosure-state-class-1" id="telecheck_disclosure">
+                <div class="fieldErrorMessage">Please indicate your agreement.</div>
+                <input autocomplete="off" id="telecheck_disclosure_accepted" name="telecheck_disclosure_accepted"
+                       type="checkbox" value="1">
+                <label for="telecheck_disclosure_accepted">Click to Agree</label>
+                <div id="hco_personal_one_time">
+                    <p>
+                        Today, being
+                        <span class="teleCheckDate"></span>, I,
+                        <span id="teleCheck-customerName"></span>, by entering my routing and account number above and
+                        clicking
+                        “Authorize,” I authorize my payment in the amount indicated above to be processed as an
+                        electronic funds
+                        transfer (EFT) or draft
+                        drawn from my checking or savings account as indicated above and, if necessary, to have my
+                        account
+                        electronically credited to correct erroneous debits.
+                    </p>
+                    <p>
+                        I understand that my payment will be processed within 1 - 2 banking days. If the payment returns
+                        unpaid, I
+                        authorize you or your service provider to collect the payment and my state’s return item fee
+                        and, if
+                        applicable, costs, by EFT(s) or draft(s) drawn
+                        from my account.
+                    </p>
+                    <p>
+                        <a href="https://merchants.fiserv.com/en-us/customer-center/merchants/telecheck-returned-check-fees/"
+                           target="_new">Click
+                            here to view your state’s returned item fee
+                            and, if applicable, costs.</a>
+                    </p>
+                    <p>
+                        I understand that this authorization will remain in full force and effect until I notify you
+                        that I wish to
+                        revoke it by calling (XXX) XXX-XXXX and allow you reasonable opportunity to act on my notice.
+                    </p>
+                    <p>
+                        PLEASE PRINT A COPY OF THIS PAGE FOR YOUR RECORDS. ALTERNATIVELY, CONTACT US AT (XXX) XXX-XXXX
+                        TO LEARN HOW
+                        YOU CAN OBTAIN A COPY.
+                    </p>
+                </div>
+                <div id="hco_company">
+                    <p>
+                        Today, being
+                        <span class="teleCheckDate"></span>, by entering the Company’s
+                        routing and account number above and clicking “Authorize,” as an
+                        authorized Company representative, I authorize the payment in the
+                        amount indicated above to be processed as an electronic funds
+                        transfer (EFT) or draft drawn from the Company’s checking or
+                        savings account as indicated above and, if necessary, electronic
+                        credits to the Company’s account to correct erroneous debits.
+                    </p>
+
+                    <p>
+                        I understand that the processing of the payment will be completed
+                        within 1 - 2 banking days. If the payment returns unpaid, I
+                        authorize you or your service provider to collect the payment and
+                        the state return item fee and, if applicable, costs, based on the
+                        Company’s locale that I have provided above by EFT(s) or draft(s)
+                        drawn from the Company account.
+                    </p>
+
+                    <p>
+                        <a href="http://www.firstdata.com/support/telecheck_returned_check/returned_check_fees.htm"
+                           target="_new">Click
+                            here to view your state’s returned item fee
+                            and, if applicable, costs.</a>
+                    </p>
+
+                    <p>
+                        I understand that this authorization will remain in full force
+                        and effect until I notify you that I wish to revoke it by calling
+                        you at
+                        <span id="teleCheckMerchantPhone"></span>
+                        and allow you reasonable
+                        opportunity to act on my notice.
+                    </p>
+                    <p>
+                        I accept these terms, acknowledge these disclosures and authorize
+                        this payment on behalf of Company and further agree, on Company’s behalf, that Company shall be
+                        bound by the NACHA Rules in effect, both now and as amended from
+                        time to time.
+                    </p>
+                </div>
+            </div>
+
+            <div id="giftCard-div" class="payment-form">
+                <h1>Pay With Your Gift Card</h1>
+                <label>Cardholder Name</label>
+                <div class="fieldErrorMessage" id="fieldErrorMessage-gcName-required">The Card Holder's Name is required.</div>
+                <div class="fieldErrorMessage" id="fieldErrorMessage-gcName-length">The Card Holder's Name must be between 3 and 30 letters long.</div>
+                <input type="text" name="gc_cardholder_name" id="gc_cardholder_name" size="20" autocomplete="off"/>
+                <label>Gift Card Number</label>
+                <div class="fieldErrorMessage" id="fieldErrorMessage-gcNumber">The Credit Card Number is required.</div>
+                <input type="text" name="gc_card_number" id="gc_card_number" maxlength="19" size="20" autocomplete="off"/>
+                
+                <div class="default-field-div">
+                    <div class="form-group custom_field_row" id="gift_card_ean">
+                        <label><abbr title="Security Card Value">EAN</abbr></label>
+                        <input type="text" name="gc_card_ean" id="gc_card_ean" size="13" maxlength="13" autocomplete="off"/>
+                    </div>
+                </div>
+                <input type="hidden" name="cvd_presence_ind" id="cvd_presence_ind" value="1" autocomplete="off"/>
+            </div>
+
+            <div class="pay-option custom_form" id="form">
+                <h1 id="headingTitle">Pay With Your Credit Card</h1>
+                <p id="headingSubTitle">Please verify the card information matches your billing information.</p>
+                <div id="default-payment-form">
+                    <div class="default-payment-form-innerdiv">
+                        <div class="form-group custom_field_row" id="droppable1">
+                            <label for="CHName-default">Card Holder Name</label>
+                            <div class="fieldErrorMessage-creditCardName">Credit Card Holder Name
+                                is not
+                                valid.
+                            </div>
+                            <input class="form-control" id="CHName-default" name="fname" type="text" maxlength="50" size="50"
+                                   value="" />
+
+                        </div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row" id="droppable2">
+                            <label for="CCNumber-default">Credit Card Number</label>
+                            <div class="fieldErrorMessage-creditCardNumber">Credit Card Number is
+                                not valid.
+                            </div>
+                            <input class="form-control" id="CCNumber-default" maxlength="16"
+                                   name="fname" size="16"
+                                   type="text"/>
+                        </div>
+                        <div class="row rown" id="creditCardLogoDefault"></div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row" id="droppable3">
+                            <label for="Expd-default">Expiry Date (MMYY)</label>
+                            <div class="fieldErrorMessage-expiryDate">Expiry Date is not valid.
+                            </div>
+                            <input class="form-control" id="Expd-default" maxlength="4" name="fname" size="4"
+                                   type="text"/>
+                        </div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row" id="droppable4">
+                            <label for="SecurityCode-default">Security Code</label>
+                            <div class="fieldErrorMessage-cvv">cvv is not valid.</div>
+                            <div class="cvv-fields">
+                                <input class="form-control securityCode-default" id="SecurityCode-default"
+                                       maxlength="4" name="fname"
+                                       size="4" type="text"/>
+
+                            </div>
+                        </div>
+                        <p class="cvv_help">
+                            CVV2 is the Visa term for the 3-digit security code on the back of the credit card (Visa and
+                            MasterCard).
+                            For American Express, it is 4-digits and located on the front.
+                        </p>
+                        <p><img height="26" src="https://commercehub-cdn.fiservapps.com/hco/assets/images/cvv2.gif"></p>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row city_row" id="droppable6">
+                            <label for="city-default">City</label>
+                            <div class="fieldErrorMessage-city">city is not valid</div>
+                            <input class="form-control" id="city-default" maxlength="16"
+                                   name="fname" size="16"
+                                   type="text" value=""/>
+                        </div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row" id="droppable5">
+                            <label for="zip-default">Postal Code</label>
+                            <div class="fieldErrorMessage-zip">zip is not valid</div>
+                            <input class="form-control zip-default" id="zip-default" maxlength="10" name="fname"
+                                   size="6"
+                                   type="text" value=""/>
+                        </div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row" id="droppable7">
+                            <label for="country-default">Country</label>
+                            <div class="fieldErrorMessage-country">country is not valid</div>
+                            <select class="country-select x_country" id="country-default" name="fname">
+                                <option value="" >Select Country</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row state_row" id="droppable8">
+                            <label for="province-default">State/Province</label>
+                            <div class="fieldErrorMessage-province">state/province is not valid</div>
+                            <select class="x_state" id="province-default" name="fname">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="default-field-div">
+                        <div class="form-group custom_field_row" id="droppable9">
+                            <label for="address-default">Address</label>
+                            <p id="addressSubText">Enter the credit card billing address below.</p>
+                            <div class="fieldErrorMessage-address">address is not valid</div>
+                            <input class="form-control address-default" id="address-default" maxlength="100" name="fname"
+                                   size="30"
+                                   type="text" value=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="captcha-div" >
+                <label id="h-captcha-label">Verification</label>
+                <div id="h-captcha-message" class="fieldErrorMessage-verification">Your hCaptcha entry was invalid.</div>
+            </div>
+            <button class="submit-payment" id="payment-button-regular" type="button"></button>
+            <button class="submit-payment" id="telecheck_submit" name="commit">Proceed to Consent Page
+                <button class="submit-payment" id="giftcard-submit" type="button"></button>
+            </button>
+
+            <div id="applePay-div">
+                <apple-pay-button buttonstyle="black" id="apple-button" locale="en" onclick="onApplePayButtonClicked()"
+                                  type="plain"></apple-pay-button>
+            </div>
+            <h2 id="paymentStatus"></h2>
+            <div id="afterPayment">
+                <div id="completeSplitTender">
+                    <p>This order has not been completely paid for.</p>
+                    <a href="#" id="completeSplitTenderLink"></a>
+                    </br>OR</br>
+                    <button id="cancelOrder" onclick="cancelOrder()">Cancel Order</button>
+                </div>
+                <p id="payReceiptHead">Here is your receipt:</p>
+                <div id="receipt"></div>
+            </div>
+            <div id="applePayment">
+                <div id="apple-receipt"></div>
+            </div>
+            <div>
+                <div id="relayResponseReplayDiv"></div>
+            </div>
+            <div id="receiptButtonDiv">
+                <input id="receiptLinkButton" value="Payment Confirmation" type="button"/>
+            </div>
+            <div id="return">
+                <a id="returnUrl"></a>
+            </div>
+            <div id="resultaction">
+                Too many failed attempts. Please try again later!
+            </div>
+            <a href="#" id="tryagain">Try again</a>
+            <div id="secure">
+                <p>Your private information is secured using SSL (Secure Sockets Layer), the leading security protocol on the Internet. Information is encrypted and exchanged with an http server.</p>
+                <p>We respect your privacy. We will pass your name, address or e-mail address on only to the merchant.</p>
+            </div>
+        </div>
+    </div>
+    <div id="loader">
+        <img class="loaderImg" src="https://commercehub-cdn.fiservapps.com/hco/assets/images/loader.gif">
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<div id="error-document">
+    <div id="header-error">
+        <h1 id="review-order-error">
+            <span class="pageTitle">Georgia Express Corporations (eCorp) Credit Card Payment</span>
+        </h1>
+    </div>
+    <div id="content-error">
+        <div id="error">
+            <h1>Unable to proceed with payment</h1>
+            <p>We cannot proceed with payment because of technical difficulties.
+                Please try again later or contact customer support at <span>Georgia Express Corporations (eCorp) Credit Card Payment</span> </p>
+        <p id="error-message"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
